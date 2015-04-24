@@ -5,7 +5,7 @@ title: Prerequisites
 
 This page explains the various steps that you have to do before attending the workshop:
 
-## Software Environment Setup (Ubuntu - test input jimson nishant test 2)
+## Software Environment Setup
 
 * Please prepare a Laptop with these minimum requirements for doing the exercises:
   - Intel i3 Processor
