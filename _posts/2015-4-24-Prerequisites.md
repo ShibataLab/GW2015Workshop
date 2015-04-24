@@ -5,7 +5,7 @@ title: Prerequisites
 
 This page explains the steps that you have to do before attending the workshop:
 
-## Software Environment Setup (Ubuntu)
+## Software Environment Setup (Ubuntu - test input)
 
 * Please prepare a Laptop with these minimum requirements for doing the exercises:
   - Intel i3 Processor
