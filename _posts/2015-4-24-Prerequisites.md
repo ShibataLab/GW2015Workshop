@@ -3,7 +3,7 @@ layout: post
 title: Prerequisites
 ---
 
-This page explains the steps that you have to do before attending the workshop:
+This page explains the various steps that you have to do before attending the workshop:
 
 ## Software Environment Setup (Ubuntu - test input jimson nishant test 2)
 
