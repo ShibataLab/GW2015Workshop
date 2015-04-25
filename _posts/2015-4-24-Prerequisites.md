@@ -41,16 +41,17 @@ This page explains the various steps that you have to do before attending the wo
     
   ![VB5](../images/VB5.png)
 
-With this you have finished setting up the software environment for Linux.
+* This will start Ubuntu operating system. The login password is **workshop** and the sudo password is also **workshop**.
+
+With this you have finished setting up the software environment for the workshops.
 
 ---
 
 ## Installing Matlab in Ubuntu
 
-The exercises for [Machine Learning]({{site.baseurl}}/ML) and [Motion Capture]({{site.baseurl}}/Mocap) workshops will be conducted in Matlab. For this, you will have to install Matlab on the Ubuntu virtual image.
+The exercises for [Machine Learning]({{site.baseurl}}/ML) and [Motion Capture]({{site.baseurl}}/Mocap) workshops will be conducted in Matlab. For this, you will have to install Matlab on the Ubuntu virtual image:
 
-For this follow these instructions:
-* Open a web browser and go to the Mathworks [website](http://jp.mathworks.com/) and create a mathworks account.
+* Open a web browser and go to the [mathworks website](http://jp.mathworks.com/) and create a mathworks account.
 
 ![Mathworks](../images/mathworks.png)
 
@@ -58,24 +59,27 @@ For this follow these instructions:
 
 ![MathworksTrial](../images/mathworksTrial.png)
 
-* Open a terminal window by using the shortcut **Alt+Ctrl+t** and type in the following commands:
+* Open a terminal window by using the shortcut **Alt+Ctrl+t** or pressing the terminal icon and type in the following commands:
 
 ![Terminal](../images/terminal.png)
 
-```
-$ cd ~/Downloads/Matlab/
-$ sudo ./install
-```
+{% highlight bash %}
+cd ~/Downloads/Matlab/
+sudo ./install
+{% endhighlight %}
 
-After this, you will be asked to enter password which is **workshop**.
+  You will be asked to enter the sudo password which is **workshop**.
 
 * When the Matlab installer opens, follow the instructions to complete the installation:
 
-![MatlabInstall1](../images/matlabInstall1.png)
+  - Install the software using your Mathworks account:
+  ![MatlabInstall1](../images/matlabInstall1.png)
 
-![MatlabInstall2](../images/matlabInstall2.png)
+  - Enter mathworks account details:
+  ![MatlabInstall2](../images/matlabInstall2.png)
 
-![MatlabInstall3](../images/matlabInstall3.png)
+  - Installation progress:
+  ![MatlabInstall3](../images/matlabInstall3.png)
 
 * After installation, you will need to verify the matlab license one more time:
 
@@ -83,9 +87,9 @@ After this, you will be asked to enter password which is **workshop**.
 
 * To start using Matlab, open a new terminal and type in the following command:
 
-```
-$ ./matlab
-```
+{% highlight bash %}
+./matlab
+{% endhighlight %}
 
 ---
 
@@ -127,4 +131,14 @@ For accessing the materials of the workshop, you need to create an account on th
 ![Github](../images/github.png)  
 
 * Practice editing the contents of this [site](http://shibatalab.github.io) from the Github website as shown below:
-  - 
+  - Open a browser and go to Github website and login with your account.
+
+  - Go to the repository of this [site](https://github.com/shibatalab/GW2015Workshop) and check the contents of the repository.
+
+  - Edit the contents of this page available at this [link](https://github.com/shibatalab/GW2015Workshop/blob/gh-pages/_posts/2015-4-24-Prerequisites.md) and read the raw content of this page.
+
+---
+
+## Comment below
+
+If you have completed all the steps required for attending the workshops, then please comment below with your name. Also please comment if you have any problems with the steps.    
