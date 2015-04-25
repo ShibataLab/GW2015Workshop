@@ -5,6 +5,11 @@ title: Prerequisites
 
 This page explains the various steps that you have to do before attending the workshop:
 
+* Table of Contents:
+{:toc}
+
+---
+
 ## Software Environment Setup
 
 * Please prepare a Laptop with these minimum requirements for doing the exercises:
@@ -38,6 +43,52 @@ This page explains the various steps that you have to do before attending the wo
 
 With this you have finished setting up the software environment for Linux.
 
+---
+
+## Installing Matlab in Ubuntu
+
+The exercises for [Machine Learning]({{site.baseurl}}/ML) and [Motion Capture]({{site.baseurl}}/Mocap) workshops will be conducted in Matlab. For this, you will have to install Matlab on the Ubuntu virtual image.
+
+For this follow these instructions:
+* Open a web browser and go to the Mathworks [website](http://jp.mathworks.com/) and create a mathworks account.
+
+![Mathworks](../images/mathworks.png)
+
+* Obtain a trial license for using Matlab from the website.
+
+![MathworksTrial](../images/mathworksTrial.png)
+
+* Open a terminal window by using the shortcut **Alt+Ctrl+t** and type in the following commands:
+
+![Terminal](../images/terminal.png)
+
+```
+$ cd ~/Downloads/Matlab/
+$ sudo ./install
+```
+
+After this, you will be asked to enter password which is **workshop**.
+
+* When the Matlab installer opens, follow the instructions to complete the installation:
+
+![MatlabInstall1](../images/matlabInstall1.png)
+
+![MatlabInstall2](../images/matlabInstall2.png)
+
+![MatlabInstall3](../images/matlabInstall3.png)
+
+* After installation, you will need to verify the matlab license one more time:
+
+![MatlabInstall4](../images/matlabInstall4.png)
+
+* To start using Matlab, open a new terminal and type in the following command:
+
+```
+$ ./matlab
+```
+
+---
+
 ## Getting used to Ubuntu
 
 Ubuntu is a free Operating System that is based on the Linux kernel. In the workshop, we will be using the Command Line Interface (CLI) called **Terminal**.
@@ -50,6 +101,20 @@ Please comment at the bottom of this page, if you know a better tutorial to lear
 
 * **English**: [Official](https://help.ubuntu.com/community/UsingTheTerminal). 
 
+---
+
+## Getting used to Matlab
+
+Matlab is a computing software that is used in many fields of Science and Engineering. To learn the Matlab platform, you can refer to the following resources:
+
+* **日本語**: [Official](http://jp.mathworks.com/academia/student_center/tutorials/launchpad.html?s_cid=embvid_matlab_rr_2_matlab_tutorial_JP).
+
+Please comment at the bottom of this page, if you know a better tutorial to learn about Matlab.
+
+* **English**: [Official](http://www.mathworks.com/academia/student_center/tutorials/launchpad.html?s_tid=gn_loc_drop).
+
+---
+
 ## Getting used to Git/Github
 
 One of the workshops will be on Version Control Software called [Git](http://git-scm.com/) and on the Git online interface called [Github](http://github.com).
@@ -60,3 +125,6 @@ For accessing the materials of the workshop, you need to create an account on th
 * Follow the user **shibatalab** from this [link](https://github.com/shibatalab) as shown in the figure below:
 
 ![Github](../images/github.png)  
+
+* Practice editing the contents of this [site](http://shibatalab.github.io) from the Github website as shown below:
+  - 
