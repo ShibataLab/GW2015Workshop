@@ -1,26 +1,28 @@
 ---
 layout: post
-title: Prerequisites
+title: Prerequisites　(事前準備)
 ---
 
-This page explains the various steps that you have to do before attending the workshop:
+This page explains the steps that you have to do before attending the workshop.
+このページはワークショップまでに必要な事前準備を説明しています．
 
 * Table of Contents:
 {:toc}
 
 ---
 
-## Software Environment Setup
+## Software Environment Setup　(ソフトウェア環境セットアップ)
 
-* Please prepare a Laptop with these minimum requirements for doing the exercises:
+* Please prepare a Laptop with these minimum requirements for doing the exercises.　（必要最低限性能は以下の二点です．)
   - Intel i3 Processor
   - 2 GB RAM
 
-* Download VirtualBox software from [here](https://virtualbox.org/wiki/Downloads) and install the software on your laptop.
+* Download VirtualBox software from [here](https://virtualbox.org/wiki/Downloads) and install the software on your laptop.　（”VirtualBox"をこのページからノートPCにダウンロードしてインストールしてください．）
 
-* Copy the Ubuntu 14.04 VirtualBox image from the shared PC of ShibataLab to your Laptop. The file is available in the **Desktop\Workshop** folder titled **Workshop.ova**.
+* Copy the Ubuntu VirtualBox image from the shared PC of ShibataLab to your Laptop. The file is available in the **Desktop\Workshop** folder titled **Workshop.ova**.　（柴田研究室の共有パソコンから"Ubuntu"（OS）をコピーしてください．ファイル名は"Workshop.ova"となっており，デスクトップにあります．)
 
-* Open the VirtualBox software and import the Ubuntu image as shown below:
+* Open VirtualBox and import the Ubuntu image as shown below.　（次の手順でインポートしてください．）
+
   - Open VirtualBox:
   
   ![VB1](../images/VB1.png)
@@ -41,25 +43,25 @@ This page explains the various steps that you have to do before attending the wo
     
   ![VB5](../images/VB5.png)
 
-* This will start Ubuntu operating system. The login password is **workshop** and the sudo password is also **workshop**.
+* This will start Ubuntu operating system. The login password is **workshop** and the sudo password is also **workshop**.　（ログインパスワードと管理者として実行するときのパスワードはどちらも"workshop"です．）
 
-With this you have finished setting up the software environment for the workshops.
+With this you have finished setting up the software environment for the workshops.　（これでワークショップに必要なソフトウェア環境は整います．）
 
 ---
 
-## Installing Matlab in Ubuntu
+## Installing Matlab in Ubuntu　（UbuntuでのMatlabのインストールの方法）
 
-The exercises for [Machine Learning]({{site.baseurl}}/ML) and [Motion Capture]({{site.baseurl}}/Mocap) workshops will be conducted in Matlab. For this, you will have to install Matlab on the Ubuntu virtual image:
+Exercises for [Machine Learning]({{site.baseurl}}/ML) and [Motion Capture]({{site.baseurl}}/Mocap) workshops will be conducted in Matlab. For this, you will have to install Matlab on the Ubuntu virtual image.　（”Machine Learning”と"Motion capture"はMatlabが必要です．MatlabをUbuntuにインストールしてください．）
 
-* Open a web browser and go to the [mathworks website](http://jp.mathworks.com/) and create a mathworks account.
+* Open a web browser and go to the [mathworks website](http://jp.mathworks.com/) and create a mathworks account.　（MathworksのウェブサイトでMathworksのアカウントを作ってください．）
 
 ![Mathworks](../images/mathworks.png)
 
-* Obtain a trial license for using Matlab from the website.
+* Obtain a trial license for using Matlab from the website.　（製品評価版を入手してください．）
 
 ![MathworksTrial](../images/mathworksTrial.png)
 
-* Open a terminal window by using the shortcut **Alt+Ctrl+t** or pressing the terminal icon and type in the following commands:
+* Open a terminal window by using the shortcut **Alt+Ctrl+t** or pressing the terminal icon and type in the following commands. You will be asked to enter the sudo password which is **workshop**.　（ショートカットキー”Alt+Ctrl+t”もしくはターミナルアイコンを押してください．次のコマンドを入力してください．必要なパスワードは”workshop”です．）
 
 ![Terminal](../images/terminal.png)
 
@@ -68,24 +70,25 @@ cd ~/Downloads/Matlab/
 sudo ./install
 {% endhighlight %}
 
-  You will be asked to enter the sudo password which is **workshop**.
-
-* When the Matlab installer opens, follow the instructions to complete the installation:
+* When the Matlab installer opens, follow the instructions to complete the installation.　（Matlabのインストーラーを開いたら、次の手順でインストールしてください．）
 
   - Install the software using your Mathworks account:
+
   ![MatlabInstall1](../images/matlabInstall1.png)
 
   - Enter mathworks account details:
+
   ![MatlabInstall2](../images/matlabInstall2.png)
 
   - Installation progress:
+
   ![MatlabInstall3](../images/matlabInstall3.png)
 
-* After installation, you will need to verify the matlab license one more time:
+  - After installation, you will need to verify the matlab license one more time:
 
-![MatlabInstall4](../images/matlabInstall4.png)
+  ![MatlabInstall4](../images/matlabInstall4.png)
 
-* To start using Matlab, open a new terminal and type in the following command:
+* To start using Matlab, open a new terminal and type in the following command.　（Matlabを起動するには新しいターミナルで次のコマンドを入力してください．）
 
 {% highlight bash %}
 ./matlab
@@ -99,7 +102,7 @@ Ubuntu is a free Operating System that is based on the Linux kernel. In the work
 
 Please read these tutorial pages to get used to Terminal:
 
-* **日本語**: [Official](https://wiki.ubuntulinux.jp/UbuntuTips/Others/HowToUseTerminal), [Part 1](http://blog.livedoor.jp/hiroumauma/archives/957224.html#more), [Part 2](http://blog.livedoor.jp/hiroumauma/archives/958159.html#more), [Part 3](http://blog.livedoor.jp/hiroumauma/archives/968446.html#more).
+* **日本語**: [Official](https://wiki.ubuntulinux.jp/UbuntuTips/Others/HowToUseTerminal).
 
 Please comment at the bottom of this page, if you know a better tutorial to learn about Terminal.
 

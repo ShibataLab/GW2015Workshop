@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shibata Lab Workshops</title>
+    <description></description>
+    <link>http://shibatalab.github.io</link>
+    <atom:link href="http://shibatalab.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Prerequisites　(事前準備)</title>
+        <description>&lt;p&gt;This page explains the steps that you have to do before attending the workshop.
+このページはワークショップまでに必要な事前準備を説明しています．&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#software-environment-setup&quot; id=&quot;markdown-toc-software-environment-setup&quot;&gt;Software Environment Setup　(ソフトウェア環境セットアップ)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#installing-matlab-in-ubuntuubuntumatlab&quot; id=&quot;markdown-toc-installing-matlab-in-ubuntuubuntumatlab&quot;&gt;Installing Matlab in Ubuntu　（UbuntuでのMatlabのインストールの方法）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#getting-used-to-ubuntu&quot; id=&quot;markdown-toc-getting-used-to-ubuntu&quot;&gt;Getting used to Ubuntu&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#getting-used-to-matlab&quot; id=&quot;markdown-toc-getting-used-to-matlab&quot;&gt;Getting used to Matlab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#getting-used-to-gitgithub&quot; id=&quot;markdown-toc-getting-used-to-gitgithub&quot;&gt;Getting used to Git/Github&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#comment-below&quot; id=&quot;markdown-toc-comment-below&quot;&gt;Comment below&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;software-environment-setup&quot;&gt;Software Environment Setup　(ソフトウェア環境セットアップ)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Please prepare a Laptop with these minimum requirements for doing the exercises.　（必要最低限性能は以下の二点です．)
+    &lt;ul&gt;
+      &lt;li&gt;Intel i3 Processor&lt;/li&gt;
+      &lt;li&gt;2 GB RAM&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Download VirtualBox software from &lt;a href=&quot;https://virtualbox.org/wiki/Downloads&quot;&gt;here&lt;/a&gt; and install the software on your laptop.　（”VirtualBox”をこのページからノートPCにダウンロードしてインストールしてください．）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Copy the Ubuntu VirtualBox image from the shared PC of ShibataLab to your Laptop. The file is available in the &lt;strong&gt;Desktop\Workshop&lt;/strong&gt; folder titled &lt;strong&gt;Workshop.ova&lt;/strong&gt;.　（柴田研究室の共有パソコンから”Ubuntu”（OS）をコピーしてください．ファイル名は”Workshop.ova”となっており，デスクトップにあります．)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open VirtualBox and import the Ubuntu image as shown below.　（次の手順でインポートしてください．）&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Open VirtualBox:&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;../images/VB1.png&quot; alt=&quot;VB1&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Import Appliance:&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;../images/VB2.png&quot; alt=&quot;VB2&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Open the OVA file:&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;../images/VB3.png&quot; alt=&quot;VB3&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Start importing:&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;../images/VB4.png&quot; alt=&quot;VB4&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Start Ubuntu 14.04:&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;../images/VB5.png&quot; alt=&quot;VB5&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This will start Ubuntu operating system. The login password is &lt;strong&gt;workshop&lt;/strong&gt; and the sudo password is also &lt;strong&gt;workshop&lt;/strong&gt;.　（ログインパスワードと管理者として実行するときのパスワードはどちらも”workshop”です．）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With this you have finished setting up the software environment for the workshops.　（これでワークショップに必要なソフトウェア環境は整います．）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;installing-matlab-in-ubuntuubuntumatlab&quot;&gt;Installing Matlab in Ubuntu　（UbuntuでのMatlabのインストールの方法）&lt;/h2&gt;
+
+&lt;p&gt;Exercises for &lt;a href=&quot;/GW2015Workshop/ML&quot;&gt;Machine Learning&lt;/a&gt; and &lt;a href=&quot;/GW2015Workshop/Mocap&quot;&gt;Motion Capture&lt;/a&gt; workshops will be conducted in Matlab. For this, you will have to install Matlab on the Ubuntu virtual image.　（”Machine Learning”と”Motion capture”はMatlabが必要です．MatlabをUbuntuにインストールしてください．）&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Open a web browser and go to the &lt;a href=&quot;http://jp.mathworks.com/&quot;&gt;mathworks website&lt;/a&gt; and create a mathworks account.　（MathworksのウェブサイトでMathworksのアカウントを作ってください．）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/mathworks.png&quot; alt=&quot;Mathworks&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Obtain a trial license for using Matlab from the website.　（製品評価版を入手してください．）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/mathworksTrial.png&quot; alt=&quot;MathworksTrial&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Open a terminal window by using the shortcut &lt;strong&gt;Alt+Ctrl+t&lt;/strong&gt; or pressing the terminal icon and type in the following commands. You will be asked to enter the sudo password which is &lt;strong&gt;workshop&lt;/strong&gt;.　（ショートカットキー”Alt+Ctrl+t”もしくはターミナルアイコンを押してください．次のコマンドを入力してください．必要なパスワードは”workshop”です．）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/terminal.png&quot; alt=&quot;Terminal&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Downloads/Matlab/
+sudo ./install&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;When the Matlab installer opens, follow the instructions to complete the installation.　（Matlabのインストーラーを開いたら、次の手順でインストールしてください．）&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Install the software using your Mathworks account:&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;../images/matlabInstall1.png&quot; alt=&quot;MatlabInstall1&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Enter mathworks account details:&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;../images/matlabInstall2.png&quot; alt=&quot;MatlabInstall2&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Installation progress:&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;../images/matlabInstall3.png&quot; alt=&quot;MatlabInstall3&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;After installation, you will need to verify the matlab license one more time:&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;../images/matlabInstall4.png&quot; alt=&quot;MatlabInstall4&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To start using Matlab, open a new terminal and type in the following command.　（Matlabを起動するには新しいターミナルで次のコマンドを入力してください．）&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;./matlab&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;getting-used-to-ubuntu&quot;&gt;Getting used to Ubuntu&lt;/h2&gt;
+
+&lt;p&gt;Ubuntu is a free Operating System that is based on the Linux kernel. In the workshop, we will be using the Command Line Interface (CLI) called &lt;strong&gt;Terminal&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please read these tutorial pages to get used to Terminal:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;日本語&lt;/strong&gt;: &lt;a href=&quot;https://wiki.ubuntulinux.jp/UbuntuTips/Others/HowToUseTerminal&quot;&gt;Official&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please comment at the bottom of this page, if you know a better tutorial to learn about Terminal.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;English&lt;/strong&gt;: &lt;a href=&quot;https://help.ubuntu.com/community/UsingTheTerminal&quot;&gt;Official&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;getting-used-to-matlab&quot;&gt;Getting used to Matlab&lt;/h2&gt;
+
+&lt;p&gt;Matlab is a computing software that is used in many fields of Science and Engineering. To learn the Matlab platform, you can refer to the following resources:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;日本語&lt;/strong&gt;: &lt;a href=&quot;http://jp.mathworks.com/academia/student_center/tutorials/launchpad.html?s_cid=embvid_matlab_rr_2_matlab_tutorial_JP&quot;&gt;Official&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please comment at the bottom of this page, if you know a better tutorial to learn about Matlab.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;English&lt;/strong&gt;: &lt;a href=&quot;http://www.mathworks.com/academia/student_center/tutorials/launchpad.html?s_tid=gn_loc_drop&quot;&gt;Official&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;getting-used-to-gitgithub&quot;&gt;Getting used to Git/Github&lt;/h2&gt;
+
+&lt;p&gt;One of the workshops will be on Version Control Software called &lt;a href=&quot;http://git-scm.com/&quot;&gt;Git&lt;/a&gt; and on the Git online interface called &lt;a href=&quot;http://github.com&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For accessing the materials of the workshop, you need to create an account on the Github website:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Please create a Github account from this &lt;a href=&quot;https://github.com/&quot;&gt;link&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Follow the user &lt;strong&gt;shibatalab&lt;/strong&gt; from this &lt;a href=&quot;https://github.com/shibatalab&quot;&gt;link&lt;/a&gt; as shown in the figure below:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/github.png&quot; alt=&quot;Github&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Practice editing the contents of this &lt;a href=&quot;http://shibatalab.github.io&quot;&gt;site&lt;/a&gt; from the Github website as shown below:
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Open a browser and go to Github website and login with your account.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Go to the repository of this &lt;a href=&quot;https://github.com/shibatalab/GW2015Workshop&quot;&gt;site&lt;/a&gt; and check the contents of the repository.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Edit the contents of this page available at this &lt;a href=&quot;https://github.com/shibatalab/GW2015Workshop/blob/gh-pages/_posts/2015-4-24-Prerequisites.md&quot;&gt;link&lt;/a&gt; and read the raw content of this page.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;comment-below&quot;&gt;Comment below&lt;/h2&gt;
+
+&lt;p&gt;If you have completed all the steps required for attending the workshops, then please comment below with your name. Also please comment if you have any problems with the steps.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Apr 2015 00:00:00 +0900</pubDate>
+        <link>http://shibatalab.github.io/Prerequisites/</link>
+        <guid isPermaLink="true">http://shibatalab.github.io/Prerequisites/</guid>
+      </item>
+    
+      <item>
+        <title>Learning Shibata-lab's Motion Capture and EMG System</title>
+        <description>&lt;p&gt;This page lists the activities for Day 2 of this workshop:
+ * Morning: 10:00 - 12:00 
+	- Introduction to MAC3D motion capture and Evart Software
+	- Calibration 
+	- Creating a marker model and template 
+	- Introduction to EMG
+	- EMG Preparation
+	- Record motion and EMG of a simple reaching task (5 trials)
+	– Students must form groups of two, and each group will take turns using and recording their own data.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Afternoon: 13:00 - 15:00
+    &lt;ul&gt;
+      &lt;li&gt;Exercises in Matlab&lt;/li&gt;
+      &lt;li&gt;Basic signal processing for Motion and EMG data&lt;/li&gt;
+      &lt;li&gt;Exporting the CSV data in Matlab&lt;/li&gt;
+      &lt;li&gt;Compute for end-effector position, velocity and acceleration profile&lt;/li&gt;
+      &lt;li&gt;Process EMG: rectification, moving-average, low-pass filtering&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;*Optional: create Evart SDK client for streaming motion capture and EMG data (requirement: knowledge in C++).&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 24 Apr 2015 00:00:00 +0900</pubDate>
+        <link>http://shibatalab.github.io/Mocap/</link>
+        <guid isPermaLink="true">http://shibatalab.github.io/Mocap/</guid>
+      </item>
+    
+      <item>
+        <title>Machine Learning Workshop</title>
+        <description>
+</description>
+        <pubDate>Fri, 24 Apr 2015 00:00:00 +0900</pubDate>
+        <link>http://shibatalab.github.io/ML/</link>
+        <guid isPermaLink="true">http://shibatalab.github.io/ML/</guid>
+      </item>
+    
+      <item>
+        <title>Baxter Workshop</title>
+        <description>
+</description>
+        <pubDate>Fri, 24 Apr 2015 00:00:00 +0900</pubDate>
+        <link>http://shibatalab.github.io/Baxter/</link>
+        <guid isPermaLink="true">http://shibatalab.github.io/Baxter/</guid>
+      </item>
+    
+  </channel>
+</rss>

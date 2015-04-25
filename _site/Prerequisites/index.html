@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>Prerequisites　(事前準備) – Shibata Lab Workshops – </title>
+
+    <meta name="author" content="Shibata Lab Workshops" />
+    <meta name="description" content="">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="/GW2015Workshop/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Shibata Lab Workshops - " href="/GW2015Workshop/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <!--<a href="/GW2015Workshop/" class="site-avatar"><img src="" /></a>-->
+          
+          <div class="site-info">
+            <h1 class="site-name"><a href="/GW2015Workshop/">Shibata Lab Workshops</a></h1>
+            <p class="site-description"></p>
+          </div>
+          
+          <nav>
+            <a href="/GW2015Workshop/">Home</a>
+	    <a href="/GW2015Workshop/ML">Machine Learning</a>
+	    <a href="/GW2015Workshop/Baxter">Baxter</a>
+	    <a href="/GW2015Workshop/Mocap">MoCap</a>
+         </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Prerequisites　(事前準備)</h1>
+
+  <div class="entry">
+    <p>This page explains the steps that you have to do before attending the workshop.
+このページはワークショップまでに必要な事前準備を説明しています．</p>
+
+<ul id="markdown-toc">
+  <li><a href="#software-environment-setup" id="markdown-toc-software-environment-setup">Software Environment Setup　(ソフトウェア環境セットアップ)</a></li>
+  <li><a href="#installing-matlab-in-ubuntuubuntumatlab" id="markdown-toc-installing-matlab-in-ubuntuubuntumatlab">Installing Matlab in Ubuntu　（UbuntuでのMatlabのインストールの方法）</a></li>
+  <li><a href="#getting-used-to-ubuntu" id="markdown-toc-getting-used-to-ubuntu">Getting used to Ubuntu</a></li>
+  <li><a href="#getting-used-to-matlab" id="markdown-toc-getting-used-to-matlab">Getting used to Matlab</a></li>
+  <li><a href="#getting-used-to-gitgithub" id="markdown-toc-getting-used-to-gitgithub">Getting used to Git/Github</a></li>
+  <li><a href="#comment-below" id="markdown-toc-comment-below">Comment below</a></li>
+</ul>
+
+<hr />
+
+<h2 id="software-environment-setup">Software Environment Setup　(ソフトウェア環境セットアップ)</h2>
+
+<ul>
+  <li>Please prepare a Laptop with these minimum requirements for doing the exercises.　（必要最低限性能は以下の二点です．)
+    <ul>
+      <li>Intel i3 Processor</li>
+      <li>2 GB RAM</li>
+    </ul>
+  </li>
+  <li>
+    <p>Download VirtualBox software from <a href="https://virtualbox.org/wiki/Downloads">here</a> and install the software on your laptop.　（”VirtualBox”をこのページからノートPCにダウンロードしてインストールしてください．）</p>
+  </li>
+  <li>
+    <p>Copy the Ubuntu VirtualBox image from the shared PC of ShibataLab to your Laptop. The file is available in the <strong>Desktop\Workshop</strong> folder titled <strong>Workshop.ova</strong>.　（柴田研究室の共有パソコンから”Ubuntu”（OS）をコピーしてください．ファイル名は”Workshop.ova”となっており，デスクトップにあります．)</p>
+  </li>
+  <li>
+    <p>Open VirtualBox and import the Ubuntu image as shown below.　（次の手順でインポートしてください．）</p>
+
+    <ul>
+      <li>Open VirtualBox:</li>
+    </ul>
+
+    <p><img src="../images/VB1.png" alt="VB1" /></p>
+
+    <ul>
+      <li>Import Appliance:</li>
+    </ul>
+
+    <p><img src="../images/VB2.png" alt="VB2" /></p>
+
+    <ul>
+      <li>Open the OVA file:</li>
+    </ul>
+
+    <p><img src="../images/VB3.png" alt="VB3" /></p>
+
+    <ul>
+      <li>Start importing:</li>
+    </ul>
+
+    <p><img src="../images/VB4.png" alt="VB4" /></p>
+
+    <ul>
+      <li>Start Ubuntu 14.04:</li>
+    </ul>
+
+    <p><img src="../images/VB5.png" alt="VB5" /></p>
+  </li>
+  <li>This will start Ubuntu operating system. The login password is <strong>workshop</strong> and the sudo password is also <strong>workshop</strong>.　（ログインパスワードと管理者として実行するときのパスワードはどちらも”workshop”です．）</li>
+</ul>
+
+<p>With this you have finished setting up the software environment for the workshops.　（これでワークショップに必要なソフトウェア環境は整います．）</p>
+
+<hr />
+
+<h2 id="installing-matlab-in-ubuntuubuntumatlab">Installing Matlab in Ubuntu　（UbuntuでのMatlabのインストールの方法）</h2>
+
+<p>Exercises for <a href="/GW2015Workshop/ML">Machine Learning</a> and <a href="/GW2015Workshop/Mocap">Motion Capture</a> workshops will be conducted in Matlab. For this, you will have to install Matlab on the Ubuntu virtual image.　（”Machine Learning”と”Motion capture”はMatlabが必要です．MatlabをUbuntuにインストールしてください．）</p>
+
+<ul>
+  <li>Open a web browser and go to the <a href="http://jp.mathworks.com/">mathworks website</a> and create a mathworks account.　（MathworksのウェブサイトでMathworksのアカウントを作ってください．）</li>
+</ul>
+
+<p><img src="../images/mathworks.png" alt="Mathworks" /></p>
+
+<ul>
+  <li>Obtain a trial license for using Matlab from the website.　（製品評価版を入手してください．）</li>
+</ul>
+
+<p><img src="../images/mathworksTrial.png" alt="MathworksTrial" /></p>
+
+<ul>
+  <li>Open a terminal window by using the shortcut <strong>Alt+Ctrl+t</strong> or pressing the terminal icon and type in the following commands. You will be asked to enter the sudo password which is <strong>workshop</strong>.　（ショートカットキー”Alt+Ctrl+t”もしくはターミナルアイコンを押してください．次のコマンドを入力してください．必要なパスワードは”workshop”です．）</li>
+</ul>
+
+<p><img src="../images/terminal.png" alt="Terminal" /></p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~/Downloads/Matlab/
+sudo ./install</code></pre></div>
+
+<ul>
+  <li>
+    <p>When the Matlab installer opens, follow the instructions to complete the installation.　（Matlabのインストーラーを開いたら、次の手順でインストールしてください．）</p>
+
+    <ul>
+      <li>Install the software using your Mathworks account:</li>
+    </ul>
+
+    <p><img src="../images/matlabInstall1.png" alt="MatlabInstall1" /></p>
+
+    <ul>
+      <li>Enter mathworks account details:</li>
+    </ul>
+
+    <p><img src="../images/matlabInstall2.png" alt="MatlabInstall2" /></p>
+
+    <ul>
+      <li>Installation progress:</li>
+    </ul>
+
+    <p><img src="../images/matlabInstall3.png" alt="MatlabInstall3" /></p>
+
+    <ul>
+      <li>After installation, you will need to verify the matlab license one more time:</li>
+    </ul>
+
+    <p><img src="../images/matlabInstall4.png" alt="MatlabInstall4" /></p>
+  </li>
+  <li>
+    <p>To start using Matlab, open a new terminal and type in the following command.　（Matlabを起動するには新しいターミナルで次のコマンドを入力してください．）</p>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">./matlab</code></pre></div>
+
+<hr />
+
+<h2 id="getting-used-to-ubuntu">Getting used to Ubuntu</h2>
+
+<p>Ubuntu is a free Operating System that is based on the Linux kernel. In the workshop, we will be using the Command Line Interface (CLI) called <strong>Terminal</strong>.</p>
+
+<p>Please read these tutorial pages to get used to Terminal:</p>
+
+<ul>
+  <li><strong>日本語</strong>: <a href="https://wiki.ubuntulinux.jp/UbuntuTips/Others/HowToUseTerminal">Official</a>.</li>
+</ul>
+
+<p>Please comment at the bottom of this page, if you know a better tutorial to learn about Terminal.</p>
+
+<ul>
+  <li><strong>English</strong>: <a href="https://help.ubuntu.com/community/UsingTheTerminal">Official</a>.</li>
+</ul>
+
+<hr />
+
+<h2 id="getting-used-to-matlab">Getting used to Matlab</h2>
+
+<p>Matlab is a computing software that is used in many fields of Science and Engineering. To learn the Matlab platform, you can refer to the following resources:</p>
+
+<ul>
+  <li><strong>日本語</strong>: <a href="http://jp.mathworks.com/academia/student_center/tutorials/launchpad.html?s_cid=embvid_matlab_rr_2_matlab_tutorial_JP">Official</a>.</li>
+</ul>
+
+<p>Please comment at the bottom of this page, if you know a better tutorial to learn about Matlab.</p>
+
+<ul>
+  <li><strong>English</strong>: <a href="http://www.mathworks.com/academia/student_center/tutorials/launchpad.html?s_tid=gn_loc_drop">Official</a>.</li>
+</ul>
+
+<hr />
+
+<h2 id="getting-used-to-gitgithub">Getting used to Git/Github</h2>
+
+<p>One of the workshops will be on Version Control Software called <a href="http://git-scm.com/">Git</a> and on the Git online interface called <a href="http://github.com">Github</a>.</p>
+
+<p>For accessing the materials of the workshop, you need to create an account on the Github website:</p>
+
+<ul>
+  <li>Please create a Github account from this <a href="https://github.com/">link</a>.</li>
+  <li>Follow the user <strong>shibatalab</strong> from this <a href="https://github.com/shibatalab">link</a> as shown in the figure below:</li>
+</ul>
+
+<p><img src="../images/github.png" alt="Github" /></p>
+
+<ul>
+  <li>Practice editing the contents of this <a href="http://shibatalab.github.io">site</a> from the Github website as shown below:
+    <ul>
+      <li>
+        <p>Open a browser and go to Github website and login with your account.</p>
+      </li>
+      <li>
+        <p>Go to the repository of this <a href="https://github.com/shibatalab/GW2015Workshop">site</a> and check the contents of the repository.</p>
+      </li>
+      <li>
+        <p>Edit the contents of this page available at this <a href="https://github.com/shibatalab/GW2015Workshop/blob/gh-pages/_posts/2015-4-24-Prerequisites.md">link</a> and read the raw content of this page.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="comment-below">Comment below</h2>
+
+<p>If you have completed all the steps required for attending the workshops, then please comment below with your name. Also please comment if you have any problems with the steps.</p>
+
+  </div>
+
+  <div class="date">
+    Written on April 24, 2015
+  </div>
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+    
+	    var disqus_shortname = 'shibatalab'; 
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+</article>
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+<a href="http://facebook.com/TomShibataLab"><i class="svg-icon facebook"></i></a>
+
+<a href="http://github.com/shibatalab"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
