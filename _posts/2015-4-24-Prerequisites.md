@@ -6,12 +6,51 @@ title: Prerequisites　(事前準備)
 This page explains the steps that you have to do before attending the workshop.
 このページはワークショップまでに必要な事前準備を説明しています．
 
+The prerequisites for attending each workshop are different. Please complete these before the start of workshop.
+
 * Table of Contents:
 {:toc}
 
 ---
 
-## Software Environment Setup　(ソフトウェア環境セットアップ)
+## [Machine Learning Workshop]({{ site.baseurl }}/ML)
+
+* Please prepare a Laptop with these minimum requirements for doing the exercises.　（必要最低限性能は以下の二点です．)
+  - Intel i3 Processor
+  - 2 GB RAM
+
+* Install Matlab on the Laptop by one of the following ways:
+  - Obtain Matlab from the LSSE Server following the instructions provided [here](http://www.lsse.kyutech.ac.jp/~techman/portal/modules/compsys/index.php?ml_lang=en).
+  - Obtain Matlab trial license from the Mathworks website available [here](https://jp.mathworks.com/programs/trials/trial_request.html?s_iid=hp_trial_hpg_cta2). For this you will need to create a Mathworks account from [here](https://jp.mathworks.com/accesslogin/login.do?uri=http://jp.mathworks.com/index.html%3Fs_tid%3Dgn_logo).
+
+---
+
+## [Motion Capture Workshop]({{ site.baseurl }}/Mocap)
+
+The requirements for the Motion Capture Workshop are similar to Machine Learning Workshop:
+
+* Please prepare a Laptop with these minimum requirements for doing the exercises.　（必要最低限性能は以下の二点です．)
+  - Intel i3 Processor
+  - 2 GB RAM
+
+* Install Matlab on the Laptop by one of the following ways:
+  - Obtain Matlab from the LSSE Server following the instructions provided [here](http://www.lsse.kyutech.ac.jp/~techman/portal/modules/compsys/index.php?ml_lang=en).
+  - Obtain Matlab trial license from the Mathworks website available [here](https://jp.mathworks.com/programs/trials/trial_request.html?s_iid=hp_trial_hpg_cta2). For this you will need to create a Mathworks account from [here](https://jp.mathworks.com/accesslogin/login.do?uri=http://jp.mathworks.com/index.html%3Fs_tid%3Dgn_logo).
+
+### Optional Requirement
+
+An optional exercise is to access motion capture data through network streaming. For this install a C++ compiler on the Laptop.
+
+* **Windows**: Install Visual Studio software by obtaining the software installer from the LSSE offce.
+* **Linux**: Install **g++** compiler in the system.
+
+---
+
+## [Baxter Workshop]({{ site.baseurl }}/Baxter)
+
+To conduct experiments with Baxter robot, Ubuntu operating system has to be used.
+
+### Software Environment Setup　(ソフトウェア環境セットアップ)
 
 * Please prepare a Laptop with these minimum requirements for doing the exercises.　（必要最低限性能は以下の二点です．)
   - Intel i3 Processor
@@ -49,54 +88,7 @@ With this you have finished setting up the software environment for the workshop
 
 ---
 
-## Installing Matlab in Ubuntu　（UbuntuでのMatlabのインストールの方法）
-
-Exercises for [Machine Learning]({{site.baseurl}}/ML) and [Motion Capture]({{site.baseurl}}/Mocap) workshops will be conducted in Matlab. For this, you will have to install Matlab on the Ubuntu virtual image.　（”Machine Learning”と"Motion capture"はMatlabが必要です．MatlabをUbuntuにインストールしてください．）
-
-* Open a web browser and go to the [mathworks website](http://jp.mathworks.com/) and create a mathworks account.　（MathworksのウェブサイトでMathworksのアカウントを作ってください．）
-
-![Mathworks](../images/mathworks.png)
-
-* Obtain a trial license for using Matlab from the website.　（製品評価版を入手してください．）
-
-![MathworksTrial](../images/mathworksTrial.png)
-
-* Open a terminal window by using the shortcut **Alt+Ctrl+t** or pressing the terminal icon and type in the following commands. You will be asked to enter the sudo password which is **workshop**.　（ショートカットキー”Alt+Ctrl+t”もしくはターミナルアイコンを押してください．次のコマンドを入力してください．必要なパスワードは”workshop”です．）
-
-![Terminal](../images/terminal.png)
-
-{% highlight bash %}
-cd ~/Downloads/Matlab/
-sudo ./install
-{% endhighlight %}
-
-* When the Matlab installer opens, follow the instructions to complete the installation.　（Matlabのインストーラーを開いたら、次の手順でインストールしてください．）
-
-  - Install the software using your Mathworks account:
-
-  ![MatlabInstall1](../images/matlabInstall1.png)
-
-  - Enter mathworks account details:
-
-  ![MatlabInstall2](../images/matlabInstall2.png)
-
-  - Installation progress:
-
-  ![MatlabInstall3](../images/matlabInstall3.png)
-
-  - After installation, you will need to verify the matlab license one more time:
-
-  ![MatlabInstall4](../images/matlabInstall4.png)
-
-* To start using Matlab, open a new terminal and type in the following command.　（Matlabを起動するには新しいターミナルで次のコマンドを入力してください．）
-
-{% highlight bash %}
-./matlab
-{% endhighlight %}
-
----
-
-## Getting used to Ubuntu
+### Getting used to Ubuntu
 
 Ubuntu is a free Operating System that is based on the Linux kernel. In the workshop, we will be using the Command Line Interface (CLI) called **Terminal**.
 
@@ -110,19 +102,7 @@ Please comment at the bottom of this page, if you know a better tutorial to lear
 
 ---
 
-## Getting used to Matlab
-
-Matlab is a computing software that is used in many fields of Science and Engineering. To learn the Matlab platform, you can refer to the following resources:
-
-* **日本語**: [Official](http://jp.mathworks.com/academia/student_center/tutorials/launchpad.html?s_cid=embvid_matlab_rr_2_matlab_tutorial_JP).
-
-Please comment at the bottom of this page, if you know a better tutorial to learn about Matlab.
-
-* **English**: [Official](http://www.mathworks.com/academia/student_center/tutorials/launchpad.html?s_tid=gn_loc_drop).
-
----
-
-## Getting used to Git/Github
+### Getting used to Git/Github
 
 One of the workshops will be on Version Control Software called [Git](http://git-scm.com/) and on the Git online interface called [Github](http://github.com).
 
