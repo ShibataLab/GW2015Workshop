@@ -11,11 +11,10 @@ The prerequisites for attending each workshop are different. Please complete the
 * Table of Contents:
 {:toc}
 
+## [Machine Learning Workshop]({{ site.baseurl }}/ML)
 ---
 
-## [Machine Learning Workshop]({{ site.baseurl }}/ML)
-
-* Please prepare a Laptop with these minimum requirements for doing the exercises.　（必要最低限性能は以下の二点です．)
+* Please prepare a Laptop with these minimum requirements for doing the exercise.
   - Intel i3 Processor
   - 2 GB RAM
 
@@ -23,13 +22,12 @@ The prerequisites for attending each workshop are different. Please complete the
   - Obtain Matlab from the LSSE Server following the instructions provided [here](http://www.lsse.kyutech.ac.jp/~techman/portal/modules/compsys/index.php?ml_lang=en).
   - Obtain Matlab trial license from the Mathworks website available [here](https://jp.mathworks.com/programs/trials/trial_request.html?s_iid=hp_trial_hpg_cta2). For this you will need to create a Mathworks account from [here](https://jp.mathworks.com/accesslogin/login.do?uri=http://jp.mathworks.com/index.html%3Fs_tid%3Dgn_logo).
 
----
-
 ## [Motion Capture Workshop]({{ site.baseurl }}/Mocap)
+---
 
 The requirements for the Motion Capture Workshop are similar to Machine Learning Workshop:
 
-* Please prepare a Laptop with these minimum requirements for doing the exercises.　（必要最低限性能は以下の二点です．)
+* Please prepare a Laptop with these minimum requirements for doing the exercises.
   - Intel i3 Processor
   - 2 GB RAM
 
@@ -44,15 +42,14 @@ An optional exercise is to access motion capture data through network streaming.
 * **Windows**: Install Visual Studio software by obtaining the software installer from the LSSE offce.
 * **Linux**: Install **g++** compiler in the system.
 
----
-
 ## [Baxter Workshop]({{ site.baseurl }}/Baxter)
+---
 
 To conduct experiments with Baxter robot, Ubuntu operating system has to be used.
 
-### Software Environment Setup　(ソフトウェア環境セットアップ)
+### Software Environment Setup
 
-* Please prepare a Laptop with these minimum requirements for doing the exercises.　（必要最低限性能は以下の二点です．)
+* Please prepare a Laptop with these minimum requirements for doing the exercises.
   - Intel i3 Processor
   - 2 GB RAM
 
@@ -86,8 +83,6 @@ To conduct experiments with Baxter robot, Ubuntu operating system has to be used
 
 With this you have finished setting up the software environment for the workshops.　（これでワークショップに必要なソフトウェア環境は整います．）
 
----
-
 ### Getting used to Ubuntu
 
 Ubuntu is a free Operating System that is based on the Linux kernel. In the workshop, we will be using the Command Line Interface (CLI) called **Terminal**.
@@ -99,8 +94,6 @@ Please read these tutorial pages to get used to Terminal:
 Please comment at the bottom of this page, if you know a better tutorial to learn about Terminal.
 
 * **English**: [Official](https://help.ubuntu.com/community/UsingTheTerminal). 
-
----
 
 ### Getting used to Git/Github
 
@@ -120,8 +113,8 @@ For accessing the materials of the workshop, you need to create an account on th
 
   - Edit the contents of this page available at this [link](https://github.com/shibatalab/GW2015Workshop/blob/gh-pages/_posts/2015-4-24-Prerequisites.md) and read the raw content of this page.
 
----
 
 ## Comment below
+---
 
 If you have completed all the steps required for attending the workshops, then please comment below with your name. Also please comment if you have any problems with the steps.    
